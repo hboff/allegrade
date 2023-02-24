@@ -3,6 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+use App\Models\Ort;
+use App\Models\Region;
+use App\Models\Gutachter;
 
 class AppServiceProvider extends ServiceProvider
 {
