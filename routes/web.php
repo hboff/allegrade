@@ -16,7 +16,6 @@ use App\Http\Controllers\ContactController;
 */
 $routes = [
     'datenschutzerklaerung',
-    'impressum',
 ];
 
 $domains = [
@@ -35,6 +34,9 @@ foreach ($domains as $domain => $domainData) {
         Route::get('/', [OrteController::class, 'index']);
         Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show'], function () use ($domainData) {})
                 ->middleware('cache.headers:private;max_age=3600');
+        Route::get('/impressum',function(){
+                return view('impressum');
+        });
         Route::get('/immobilienbewertungen/{region}', function($region){
             return view ('immobilienbewertungen', ['ortsname' => $region]);
     });
