@@ -15,7 +15,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 $routes = [
-
+    'verkehrswertverfahren'
 ];
 
 $domains = [
