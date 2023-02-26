@@ -49,7 +49,7 @@ foreach ($domains as $domain => $domainData) {
     foreach ($routes as $route) {
     Route::get($route, function () use ($route, $domainData) {
     
-    return view($route, ['data' => $data, 'expert' => $expert]);
+    return view($route);
     });
     }
     });
