@@ -15,7 +15,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 $routes = [
-    'datenschutzerklaerung',
+
 ];
 
 $domains = [
@@ -37,6 +37,9 @@ foreach ($domains as $domain => $domainData) {
         Route::get('/impressum',function(){
                 return view('impressum');
         });
+        Route::get('/datenschutzerklaerung',function(){
+            return view('datenschutzerklaerung');
+    });
         Route::get('/immobilienbewertungen/{region}', function($region){
             return view ('immobilienbewertungen', ['ortsname' => $region]);
     });
