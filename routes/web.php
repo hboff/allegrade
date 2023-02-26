@@ -15,7 +15,18 @@ use App\Http\Controllers\ContactController;
 |
 */
 $routes = [
-    'verkehrswertverfahren'
+    'verkehrswertverfahren',
+    'impressum',
+    'datenschutzerklaerung',
+    'ertragswertverfahren',
+    'gewerbeimmobilien',
+    'grundstuecke-und-rechte',
+    'landwirtschaftliche-immobilien',
+    'sachwertverfahren',
+    'sonderimmobilien',
+    'ueber-uns',
+    'wohnimmobilien',
+    
 ];
 
 $domains = [
@@ -34,12 +45,6 @@ foreach ($domains as $domain => $domainData) {
         Route::get('/', [OrteController::class, 'index']);
         Route::get('/immobilienbewertung/{ort}', [OrteController::class, 'show'], function () use ($domainData) {})
                 ->middleware('cache.headers:private;max_age=3600');
-        Route::get('/impressum',function(){
-                return view('impressum');
-        });
-        Route::get('/datenschutzerklaerung',function(){
-            return view('datenschutzerklaerung');
-    });
         Route::get('/immobilienbewertungen/{region}', function($region){
             return view ('immobilienbewertungen', ['ortsname' => $region]);
     });
