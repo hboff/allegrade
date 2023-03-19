@@ -141,8 +141,8 @@
 <!--==================== Wohnimmobilien ====================-->
 <div style="background-color: #E1E5E6; padding:3%;">
     <section class="container" id="wohnimmobilien" style="display: flex; flex-direction: row; align-items: center;">
+        <img src="/img/wohnimmobilien.jpg" alt="Immobilienbewertung Wohnimmobilien" style="flex: 1; width:50%;">
         <h3 style="flex: 1;">Wohnimmobilien</h3>
-        <img src="/img/wohnimmobilien.jpg" alt="Immobilienbewertung Wohnimmobilien" style="flex: 1;">
         <p style="flex: 1;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
     </section>
 </div>
