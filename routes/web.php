@@ -26,6 +26,7 @@ $routes = [
     'sonderimmobilien',
     'ueber-uns',
     'wohnimmobilien',
+    'startseite',
     
 ];
 
@@ -33,6 +34,7 @@ $domains = [
     'immobilienbewertung-duisburg.com' => [
         'laengengrad' => [6.26, 7.26],
         'breitengrad' => [50.93, 51.93],
+        'domainort' => 'Duisburg'
     ],
     'immobilienbewertung-kiel.com' => [
         'laengengrad' => [9.63, 10.63],
@@ -107,7 +109,7 @@ foreach ($domains as $domain => $domainData) {
     foreach ($routes as $route) {
     Route::get($route, function () use ($route, $domainData) {
     
-    return view($route);
+    return view($route, ['domainort' => $domainData['domainort']]);
     });
     }
     });
