@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-@include('partials._sidebar')
+
 <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
@@ -139,7 +139,7 @@
 
             </section> 
 <!--==================== Wohnimmobilien ====================-->
-<div style="background-color: #D1DDE8; padding:3%;">
+<div style="background-color: #E1E5E6; padding:3%;">
 <section class="container" id="wohnimmobilien">
     <h3>Wohnimmobilien</h3>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
@@ -157,7 +157,7 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
 </section>
 </div>
 <!--==================== Sonderimmobilien ====================-->
-<div style="background-color: #D1DDE8; padding:3%;">
+<div style="background-color: #E1E5E6; padding:3%;">
 <section class="container" id="sonderimmobilien">
     <h3>Sonderimmobilien</h3>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
@@ -175,7 +175,7 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
 </section>
 </div>
 <!--==================== Landwirtschaftliche Immobilien ====================-->
-<div style="background-color: #D1DDE8; padding:3%;">
+<div style="background-color: #E1E5E6; padding:3%;">
 <section class="container" id="landwirtschaftliche-immobilien">
     <h3>Landwirtschaftliche Immobilien</h3>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
