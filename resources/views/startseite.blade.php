@@ -140,13 +140,13 @@
             </section> 
 <!--==================== Wohnimmobilien ====================-->
 <div style="background-color: #E1E5E6; padding:3%;">
-<section class="container" id="wohnimmobilien">
-    <h3>Wohnimmobilien</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
-</section>
+    <section class="container" id="wohnimmobilien" style="display: flex; flex-direction: row; align-items: center;">
+        <h3 style="flex: 1;">Wohnimmobilien</h3>
+        <img src="/img/wohnimmobilien.jpg" alt="Immobilienbewertung Wohnimmobilien" style="flex: 1;">
+        <p style="flex: 1;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
+    </section>
 </div>
+
 <!--==================== Gewerbeimmobilien ====================-->
 <div style="padding:3%;">
 <section class="container" id="gewerbeimmobilien">
