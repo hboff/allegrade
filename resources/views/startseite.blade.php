@@ -6,6 +6,7 @@
 @endsection
 
 @section('content')
+@include('partials._sidebar')
 <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">

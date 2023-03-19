@@ -1,0 +1,20 @@
+<header id="header">
+
+<!-- ======= Header ======= -->
+<div class="d-flex flex-column" id="sidebarprofile">
+  <!-- ======= profile1 ======= -->
+
+
+  <div class="profile mt-4">
+    <img src="/img/logo.png" alt="" class="mt-2" style="    vertical-align: middle;
+width: 120px;
+height: 120px;
+border-style:none;
+object-fit: cover;
+object-position: center;">
+    <h1 class="text-light mb-3"><a href="index.html">Hauptstelle Allegra</a></h1>
+    <p class="text-light text-center mb-0">Telefon: 05722 913800</p>
+    <p class="text-light text-center">kontakt@allegra.de</p>
+  </div>
+</div>
+</header><!-- End Header -->
