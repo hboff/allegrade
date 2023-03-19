@@ -140,18 +140,17 @@
             </section> 
 <!--==================== Wohnimmobilien ====================-->
 <div style="background-color: #E1E5E6; padding:3%;">
-    <section class="container" id="wohnimmobilien" style="display: flex; flex-direction: column; align-items: center;">
-        <h3 style="margin-bottom: 0;">Wohnimmobilien</h3>
-        <p style="margin-top: 0;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
-
-        <img src="/img/wohnimmobilien.jpg" alt="Bildbeschreibung hier">
+    <section class="container" id="wohnimmobilien" style="display: flex; flex-direction: row; align-items: center;">
+        <img src="bild-link-hier" alt="Bildbeschreibung hier" style="flex: 1; margin-right: 20px;">
+        <div style="flex: 1;">
+            <h3>Wohnimmobilien</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor...</p>
+        </div>
     </section>
 </div>
 
 <!--==================== Gewerbeimmobilien ====================-->
-<div style="background-color: #E1E5E6; padding:3%;">
+<div style="padding:3%;">
     <section class="container" id="gewerbeimmobilien" style="display: flex; flex-direction: row; align-items: center;">
         <img src="/img/gewerbeimmobilien.jpg" alt="Bildbeschreibung hier" style="flex: 1; margin-right: 20px; width:50%;">
         <div style="flex: 2;">
