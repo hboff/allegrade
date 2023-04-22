@@ -1,14 +1,17 @@
 @extends('layout')
 
 @section('head')
-
-<title>Immobilienbewertung {{$ortsname}}</title>
-<meta name="Description" content="Sachverständiger Immobilienbewertung {{$ortsname}} ▶ Kostenlose Beratung ✔ TÜV zertifizierte Gutachter ✔ Festpreise  ✔ Kurzfristige Termine ✔ Verkehrswertgutachten ✔">
-
+@foreach($ortDE as $ort)
+@if($ort->ort_umlaut == $ortsname)
+<title>Immobilienbewertung {{$ort->ort}}</title>
+<meta name="Description" content="Sachverständiger Immobilienbewertung {{$ort->ort}} ▶ Kostenlose Beratung ✔ TÜV zertifizierte Gutachter ✔ Festpreise  ✔ Kurzfristige Termine ✔ Verkehrswertgutachten ✔">
+@endif
+@endforeach
 @endsection
 
 @section('content')
-
+@foreach($ortDE as $ort)
+@if($ort->ort_umlaut == $ortsname)
 <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
@@ -16,7 +19,7 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <h1 class="home__data-title">Immobilienbewertung<br><b>in {{$ortsname}}</b></h1>
+                        <h1 class="home__data-title">Immobilienbewertung<br><b>in {{$ort->ort}}</b></h1>
                        
 
                     </div>
@@ -41,5 +44,6 @@
 </section>
 </main>
 
-
+@endif
+@endforeach
 @endsection

@@ -46,7 +46,7 @@ object-position: center;">
                         
     @foreach($regions as $region)
     @if ($region->Country == 'Germany')
-    <a class="footer__link" href="/immobilienbewertungen/{{$region->Region}}">Immobilienbewertung {{$region->Region}}</a><br>
+    <a class="footer__link" href="/immobilienbewertungen/{{$region->Region_Umlaut}}">Immobilienbewertung {{$region->Region}}</a><br>
     @endif
 
     @endforeach
@@ -58,9 +58,9 @@ object-position: center;">
 @isset($ortsname)
 @isset ($nearestCities)
 @foreach ($nearestCities as $city)
-@if($ortsname == $city->ort)
+@if($ortsname == $city->ort_umlaut)
 @else
-<a  class="footer__link" href="/immobilienbewertung/{{$city->ort}}" >Immobilienbewertung {{$city->ort}}</a>
+<a  class="footer__link" href="/immobilienbewertung/{{$city->ort_umlaut}}" >Immobilienbewertung {{$city->ort}}</a>
 @endif
 @endforeach
 @endisset  

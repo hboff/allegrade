@@ -46,7 +46,7 @@ object-position: center;">
                         
     @foreach($regions as $region)
     @if ($region->Country == 'Germany')
-    <a class="footer__link" href="/immobilienbewertungen/{{$region->Region}}">Immobilienbewertung {{$region->Region}}</a><br>
+    <a class="footer__link" href="/immobilienbewertungen/{{$region->Region_Umlaut}}">Immobilienbewertung {{$region->Region}}</a><br>
     @endif
 
     @endforeach
@@ -61,7 +61,7 @@ object-position: center;">
     @endphp
     @foreach($ortDE as $ort)
     @if ($i++ < 16)
-    <a class="footer__link" href="/immobilienbewertung/{{$ort->ort}}">Immobilienbewertung {{$ort['ort']}}</a><br>
+    <a class="footer__link" href="/immobilienbewertung/{{$ort->ort_umlaut}}">Immobilienbewertung {{$ort['ort']}}</a><br>
     @else
     @endif
     @endforeach

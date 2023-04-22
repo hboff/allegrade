@@ -1,7 +1,11 @@
 @extends('layout')
 @section('head')
-<title>Immobilienbewertung {{$ortsname}}</title>
-<meta name="Description" content="Immobilienbewertungen in {{$ortsname}} ">
+@foreach($regions as $region)
+@if($region->Region_Umlaut == $ortsname)
+<title>Immobilienbewertung {{$region->Region}}</title>
+<meta name="Description" content="Immobilienbewertungen in {{$region->Region}} ">
+@endif
+@endforeach
 @endsection
 
 @section('content')
@@ -34,7 +38,7 @@
 $i=0;
     @endphp
     @foreach($ortDE as $ort)
-    @if($ort->bundesland == $ortsname)
+    @if($ort->bundesland_umlaut == $ortsname)
     <a href="/immobilienbewertung/{{$ort->ort}}">Immobilienbewertung {{$ort['ort']}}</a><br>
     @else
     @endif
