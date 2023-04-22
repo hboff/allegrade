@@ -52,7 +52,7 @@ foreach ($domains as $domain => $domainData) {
     foreach ($routes as $route) {
     Route::get($route, function () use ($route, $domainData) {
     
-    return view($route, ['domainort' => $domainData['domainort']]);
+    return view($route);
     });
     }
     });
