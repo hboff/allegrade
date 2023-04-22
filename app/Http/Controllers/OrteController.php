@@ -55,17 +55,26 @@ class OrteController extends Controller
     // Show single lisitng
     public function show($ortDE) {
         
-        $cityData = DB::table('orteDE')->select('laengengrad', 'breitengrad')->where('ort', $ortDE)->first();
+        $cityData = DB::table('orteDE')->select('laengengrad', 'breitengrad')->where('ort_umlaut', $ortDE)->first();
         $laengengrad = $cityData->laengengrad;
         $breitengrad = $cityData->breitengrad;//
 
-        $nearestCities = DB::table('orteDE')
-->select('ort', DB::raw("(3959 * acos(cos(radians(?)) * cos(radians(breitengrad)) * cos(radians(laengengrad) - radians(?)) + sin(radians(?)) * sin(radians(breitengrad)))) AS distance"))
-->having('distance', '<', 50)
-->orderBy('distance')
-->limit(16)
-->setBindings([$breitengrad, $laengengrad, $breitengrad])
-->get();
+        $nearestCities = DB::select(DB::raw("
+        SELECT DISTINCT ort_umlaut, ort,
+        (
+            3959 * acos (
+                cos ( radians(?) )
+                * cos( radians( breitengrad ) )
+                * cos( radians( laengengrad ) - radians(?) )
+                + sin ( radians(?) )
+                * sin( radians( breitengrad ) )
+            )
+        ) AS distance
+        FROM orteDE
+        HAVING distance < 50
+        ORDER BY distance
+        LIMIT 0 , 16
+    "), [$breitengrad, $laengengrad, $breitengrad]);
       
         return view('immobilienbewertung', [
             'nearestCities' => $nearestCities,
