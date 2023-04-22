@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('head')
-<title>Immobilienbewertung Duisburg</title>
-<meta name="Description" content="Sachverständiger Immobilienbewertung Duisburg ▶ Kostenlose Beratung ✔ TÜV zertifizierte Gutachter ✔ Festpreise  ✔ Kurzfristige Termine ✔ Verkehrswertgutachten ✔">
+<title>Allegra Immobilienbewertung</title>
+<meta name="Description" content="Sachverständiger Immobilienbewertung  ▶ Kostenlose Beratung ✔ TÜV zertifizierte Gutachter ✔ Festpreise  ✔ Kurzfristige Termine ✔ Verkehrswertgutachten ✔">
 @endsection
 
 @section('content')
