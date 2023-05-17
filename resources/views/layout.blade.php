@@ -27,10 +27,8 @@
         </div>
     </nav>
     @yield('content')
-    @if(str_contains(url()->current(), "/immobilienbewertung"))
+    @if(str_contains(url()->current(), "/immobilienbewertung-"))
     @include('partials.footer2')
-    @if(str_contains(url()->current(), "/immobilienbewertungen"))
-    @include('partials.footer3')
     @else
     @include('partials.footer')
     @endif
