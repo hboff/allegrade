@@ -1,63 +1,46 @@
-
 <!DOCTYPE html>
-    <html lang="de">
-    <head>
+<html lang="de">
 
-	        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<br />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Allegra Immobilienbewertung</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/aos.min.css">
+    <link rel="stylesheet" href="/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="/css/Lightbox-Gallery-No-Gutters-baguetteBox.min.css">
+    <link rel="stylesheet" href="/css/Navbar-Right-Links-icons.css">
+</head>
 
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="/swiper-bundle.min.css">
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="stylesheet" href="/sidebar.css">
-@yield('head')
-    </head>
-    <body> 
-	        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="https://allegra-immobilienbewertung.de" class="nav__logo">Allegra</a>
+<body>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top py-3" style="--bs-body-bg: var(--bs-navbar-color);backdrop-filter: blur(100px);-webkit-backdrop-filter: blur(100px);">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><span>Allegra</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Unsere Dienstleitungen&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="/wohnimmobilien">Wohnimmobilien</a><a class="dropdown-item" href="/gewerbeimmobilien">Gewerbeimmobilien</a><a class="dropdown-item" href="/sonderimmobilien">Sonderimmobilien</a><a class="dropdown-item" href="/grundstuecke-und-rechte">Grundstücke &amp; Rechte</a><a class="dropdown-item" href="/landwirtschaftliche-immobilien">Landwirtschaftliche Immobilien</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/ueber-uns">Über Uns</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @yield('content')
+    @if(str_contains(url()->current(), "/immobilienbewertung"))
+    @include('partials.footer2')
+    @if(str_contains(url()->current(), "/immobilienbewertungen"))
+    @include('partials.footer3')
+    @else
+    @include('partials.footer')
+    @endif
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="https://allegra-immobilienbewertung.de" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#discover" class="nav__link">Unsere Dienstleistungen</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="ueber-uns" class="nav__link">Über Uns</a>
-                        </li>
-                    </ul>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.min.js"></script>
+    <script src="/js/bs-init.js"></script>
+    <script src="/js/Lightbox-Gallery-No-Gutters-baguetteBox.min.js"></script>
+    <script src="/js/Lightbox-Gallery-No-Gutters-Lightbox-Gallery.js"></script>
+</body>
 
-                    
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
-                </div>
-            </nav>
-        </header>
-
-@yield('content')
-
-
-	        <!--==================== FOOTER ====================-->
-@if(str_contains(url()->current(), "/immobilienbewertung/"))
-@include('partials._footer2')
-@else
-@include('partials._footer')
-@endif
-
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line scrollup__icon"></i>
-        </a>
-
-        <script src="{{asset('js/scrollreveal.min.js')}}"></script>
-        <script src="{{asset('js/swiper-bundle.min.js')}}"></script>
-        <script src="{{asset('js/main.js')}}"></script>
-
-    </body>
 </html>
