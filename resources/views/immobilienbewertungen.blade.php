@@ -1,21 +1,47 @@
 @extends('layout')
+@section('head')
+@foreach($regions as $region)
+@if($region->Region_Umlaut == $ortsname)
+<title>Immobilienbewertung {{$region->Region}}</title>
+<meta name="Description" content="Immobilienbewertungen in {{$region->Region}} ">
+@endif
+@endforeach
+@endsection
+
 @section('content')
-    <section>
-        <div data-bss-parallax-bg="true" style="height: 600px;background: url(/img/allegra.jpg) center / cover;">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-md-6 text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-start justify-content-xxl-start align-items-xxl-center">
-                        <div style="max-width: 350px;">
-                            <h1 class="fw-semibold me-0" style="color: var(--bs-white);">Immobilienbewertung in ...</h1>
-                        </div>
+<section class="home" id="home">
+                <img src="/img/allegra.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__data-title">{{$ortsname}}</b></h1>
+                       
+
                     </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                  
                 </div>
-            </div>
-        </div>
-    </section>
-    <div class="container mt-5">
-        <ul class="list-unstyled">
-            <li><a class="link-secondary" href="#">Immobilienbewertung Bayern</a></li>
-        </ul>
-    </div>
-   @endsection
+            </section>
+            <section class="container">
+@php
+$i=0;
+    @endphp
+    @foreach($ortDE as $ort)
+    @if($ort->bundesland_umlaut == $ortsname)
+    <a href="/immobilienbewertung/{{$ort->ort}}">Immobilienbewertung {{$ort['ort']}}</a><br>
+    @else
+    @endif
+    @endforeach
+</section>
+@endsection
